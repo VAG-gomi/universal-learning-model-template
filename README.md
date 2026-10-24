@@ -1,9 +1,11 @@
-# Universal Learning-Model Template — DRAFT
+# Universal Learning-Model Template
 
-**Status: DRAFT — awaiting owner Step 6 review. This repository is not
-announced, and no claim of verification or publication is made here.
-It was created public per the owner's approval decision; announcement
-is gated on owner Step 6 review, not on visibility.**
+**Status: announced — owner Step 6 approval 2026-10-24.** Approved
+as recommended: the P-Db2 correction approved, the demo trainer
+reuse kept, and the PRB1 control label corrected (see the commit
+history). This repository was reviewed in Step 6 before
+announcement; its paper states what is established, what is design
+intent, and what is not established.
 
 ## One job
 

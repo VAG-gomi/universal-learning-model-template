@@ -1,7 +1,8 @@
 # The Universal Learning-Model Template: A Study Paper with Proof
 
-**Status: DRAFT — awaiting owner Step 6 review. No claim of
-verification or publication is made here.**
+**Status: announced — owner Step 6 approval 2026-10-24.**
+Approved as recommended: the P-Db2 correction approved, the demo
+trainer reuse kept, and the PRB1 control label corrected.
 
 ## 1. Title and abstract
 
