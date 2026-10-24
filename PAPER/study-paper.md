@@ -188,8 +188,9 @@ F3 0/20 — its own fine-tuning world removed its perfection.
 does ε=0.05 evaluation unlock it? **Verdict: NEITHER — noise
 partly unlocks, world-specifically.** Noisy: 45/100 (entered
 47), against greedy 0/20 and fine-tune 161/200. The control
-(plain/0 F3 20/20 greedy) stayed interpretable, so the probe is
-not uninterpretable on control grounds. (Workbench:
+(plain/0 F3 20/20 per rep under noise, 100/100) stayed
+interpretable, so the probe is not uninterpretable on control
+grounds. (Workbench:
 `nn/decisions_prb1.md` at commit `15fc230`.)
 
 ### MD1 — Can agents follow a door that moves between episodes?
