@@ -46,8 +46,13 @@ file (never rewrite history to do it).
 
 ## 4. Rules for changing this repo
 
-- EXP1 tests this template's design WITHOUT modifying this repo.
-  EXP1 work lands in the workbench; this repo is untouched by it.
+- EXP1 originally tested this template's design WITHOUT modifying this
+  repo — that boundary was OVERRIDDEN 2026-10-25 by explicit owner
+  direction: the workbench is frozen/closed, this repo is now the
+  current project, and EXP1 Step 0 was moved (cut) from the workbench
+  into this repo (commit `199bd4b`). The original WO boundary
+  (sibling untouched) no longer holds for EXP1 Step 0; later EXP1
+  phases still need their own rulings.
 - No template, paper, or implementation change happens on a
   proposal's say-so. Changes need explicit owner authorization.
 - Confirm-then-modify: EXP1 Stage 1 must CONFIRM before any
@@ -60,9 +65,10 @@ file (never rewrite history to do it).
 ## 5. Family architecture (one repo, one job)
 
 - (1) PERSONAL CODES = `time-based-mind-model` (workbench: frozen at
-  tag `freeze-2026-10-24` on `5633e2d`; its own `STATUS.md` holds the
-  full programme arc, verdicts, and standing rules — read it for
-  programme detail).
+  tag `freeze-2026-10-24` on `5633e2d`, now CLOSED — no new work
+  there; its own `STATUS.md`, frozen at `9b00849`, holds the programme
+  arc but is stale on EXP1's location — this file is the live
+  record).
 - (2) UNIVERSAL PAPERS-STUDIES = this repo.
 - (3) ETC. MATERIALS = future siblings as needs arise. Each new kind
   gets its own repo; repos cross-link instead of duplicating.
@@ -72,13 +78,18 @@ file (never rewrite history to do it).
 - **EXP1 Step 0** (wide-scale expanded-world test, Stage 1): work
   order ISSUED Step 0 ONLY (owner ruling 2026-10-24; W10 held-out
   (5,2), bar pool W10+W20+W30, 165 arm-runs, trigger FIRES).
-- **Status: BUILT in the workbench, DRAFT, UNCOMMITTED, UNVERIFIED.**
-  Design-note §9 (verification) is EMPTY. This repo holds no EXP1
-  files and is untouched by EXP1.
+- **Status: PORTED to this repo at `199bd4b`, DRAFT, UNVERIFIED.**
+  Previously built in the workbench, then cut from there (workbench
+  tree restored, no workbench commit — the workbench is closed).
+  The Step 0 files live under `TEMPLATE/` (worlds, runner, mechanics,
+  fidelity, design note, parameterized agents). Design-note §9
+  (verification) is EMPTY.
 - **Next, in order, none authorized yet:** independent verification
-  → PASS/FAIL ruling → (on PASS) commit + push in the workbench,
-  confirmed from the remote → owner spike-first gate ruling → spike
-  (MEASUREMENT ONLY) → owner proceed ruling → sweep runs.
+  of the committed sibling copy → PASS/FAIL ruling → (on PASS, no
+  further Step 0 commit is needed — it is already on main; on FAIL,
+  owner direction on fix/revert is needed) → owner spike-first gate
+  ruling → spike (MEASUREMENT ONLY) → owner proceed ruling → sweep
+  runs (in this repo, via `TEMPLATE/nn/exp1_run.py`).
 - Scope guard: Step 0 only. No sweep, no spike, no Layer F
   fictional-scenario worlds, no sibling changes.
 
