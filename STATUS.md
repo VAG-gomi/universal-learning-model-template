@@ -8,6 +8,15 @@ file (never rewrite history to do it).
 
 **Last updated:** 2026-10-25.
 
+**Both kinds of commits are needed, and both stay on main.** A work
+commit (what changed, e.g. `199bd4b`) and an explanation commit (why
+it changed, what it means, what is NOT authorized, what comes next,
+e.g. `8577317`) are different jobs. A future session can read git,
+but it cannot see the user's real-world view — only this file carries
+the reasoning across sessions. That is why this file is updated at
+every completion, before the work counts as done, and why old commits
+are never rewritten: future work arrives as new commits on top.
+
 ## 1. What this repo is
 
 - `VAG-gomi/universal-learning-model-template` — the UNIVERSAL
