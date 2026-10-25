@@ -78,20 +78,32 @@ file (never rewrite history to do it).
 - **EXP1 Step 0** (wide-scale expanded-world test, Stage 1): work
   order ISSUED Step 0 ONLY (owner ruling 2026-10-24; W10 held-out
   (5,2), bar pool W10+W20+W30, 165 arm-runs, trigger FIRES).
-- **Status: PORTED to this repo at `199bd4b`, DRAFT, UNVERIFIED.**
-  Previously built in the workbench, then cut from there (workbench
-  tree restored, no workbench commit — the workbench is closed).
-  The Step 0 files live under `TEMPLATE/` (worlds, runner, mechanics,
-  fidelity, design note, parameterized agents). Design-note §9
-  (verification) is EMPTY.
-- **Next, in order, none authorized yet:** independent verification
-  of the committed sibling copy → PASS/FAIL ruling → (on PASS, no
-  further Step 0 commit is needed — it is already on main; on FAIL,
-  owner direction on fix/revert is needed) → owner spike-first gate
+- **Status: VERIFIED — PASS, Step 0 FULFILLED (independent verifier
+  ruling 2026-10-25, recorded in this repo at `f28806e`).**
+  Step 0 was ported to this repo at `199bd4b` (DRAFT, built in the
+  workbench, then cut from there — workbench tree restored, no
+  workbench commit; the workbench is closed). The verifier checked
+  the committed sibling copy against the issued work order (WO
+  §5 step 3): all 8 items PASS — parameterization (57 insertions /
+  28 deletions, three agent files only), W10 fidelity 6/6 (verifier
+  re-ran all 12 trainings; plain/1 greedy 6/20 quirk reproduces
+  exactly), the nine worlds incl. the pinned M2 next-door-bit rule,
+  the runner (sweep dormant), the frozen prereg, the 165 count
+  (trigger FIRES), sanity-only scope (mechanics 89/89), and labels.
+  Design-note §9 is now FILLED (commit `f28806e`); the full ruling
+  text is held by the owner (local file
+  `VERIFICATION-EXP1-step0-ruling.md`, not committed to this repo).
+  Notes N1–N4 in the ruling are non-defects; the design note's
+  header still describes the workbench build origin — any header
+  clarification belongs in a later commit, never by editing
+  `199bd4b`.
+- **Next, in order, none authorized yet:** owner spike-first gate
   ruling → spike (MEASUREMENT ONLY) → owner proceed ruling → sweep
   runs (in this repo, via `TEMPLATE/nn/exp1_run.py`).
-- Scope guard: Step 0 only. No sweep, no spike, no Layer F
-  fictional-scenario worlds, no sibling changes.
+- Scope guard: Step 0 is fulfilled, but nothing further is
+  authorized by the PASS. No sweep, no spike, no Layer F
+  fictional-scenario worlds, no schedule or template change, no
+  tag/freeze/announcement action — each needs its own ruling.
 
 ## 7. Standing rules for any session working here
 
@@ -117,7 +129,7 @@ file (never rewrite history to do it).
 1. Read this file, then `README.md`, `PAPER/study-paper.md`, and
    `IMPLEMENTATION.md`.
 2. For programme detail, read the workbench's `STATUS.md` and the
-   current design note (`nn/decisions_exp1_design.md` in the
-   workbench — §9 empty means unverified).
+   current design note (`TEMPLATE/nn/decisions_exp1_design.md` in
+   this repo — §9 filled, PASS ruling 2026-10-25, Step 0 fulfilled).
 3. Ask the owner for the next ruling; do not start the next step
    by momentum.
