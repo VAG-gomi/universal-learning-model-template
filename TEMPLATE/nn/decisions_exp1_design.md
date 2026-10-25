@@ -341,6 +341,27 @@ Sanity results are NOT pooled with any sweep result.
   crossings (enter phase 8, exit phase 9, still
   open). No world code changed for either fix.
 
-## 9. Verification (LEFT EMPTY for the independent verifier)
+## 9. Verification (independent verifier ruling, 2026-10-25)
 
-[Empty — to be written by the independent verifier.]
+**Ruling: PASS — Step 0 is fulfilled.**
+
+- Verifier: independent verifier session (the builder session did not rule on its own build).
+- Verified against: sibling repo `VAG-gomi/universal-learning-model-template`, main at `a096dd1` (fresh clone, remote = local HEAD). Step 0 artifact: commit `199bd4b` (8 files). Governing documents: `WO-TBM-EXP1.md` (`8685f99`, ISSUED Step 0 ONLY) and `INSTRUCTION-EXP1-main-session.md` (`a096dd1`), both byte-identical to the issued versions.
+- Full ruling: verifier's file `VERIFICATION-EXP1-step0-ruling.md` (delivered to the owner for ferrying). This section is its summary, not a substitute for it.
+
+**Per-item verdicts (WO §5 step 3):**
+
+1. **Parameterization — PASS.** Agent diffs `8a98522..199bd4b` exactly 57 insertions, 28 deletions, three agent files only; all other TEMPLATE files unchanged. Size parameter only; defaults 101/102/104 at N=10; no learner, RNG, schedule, or scale change. Note: the WO's "asserts" wording is imprecise for `agent_nn.py` (no asserts there); hardcoded asserts live only in N=10 test/self-check functions, never in the sweep path.
+2. **W10 fidelity gate — PASS.** Verifier re-ran all 12 trainings independently (original code from `8a98522`, parameterized code from `199bd4b`). Driver result: 6/6 MATCH, "FIDELITY: PASS", exit 0. Independently re-derived: per-episode stats exactly equal, greedy outcomes exactly equal, final weights bitwise equal for all 6 pairs. Numbers: plain/0 1706/2000, 20/20; plain/1 1647/2000, 6/20 (quirk reproduces exactly); memory/0 1722/2000, 20/20; memory/1 1754/2000, 20/20; wrapped/0 1716/2000, 20/20; wrapped/1 1698/2000, 20/20. Baseline pinning: operative baseline is fresh original-code runs; recorded file hashes prove the A side was original code (A hashes match announced-template files; A-vs-D differ only in the three agent files). The replication set (7affcfb, seeds 10–49) is labeled closest pre-existing set only, not operative, not pooled.
+3. **New worlds — PASS.** W10/W10h/W20/W20h/W30/W30h/M1/M2/M3 as defined, all 20/10; M1 = 24 obstacles; M2 next-door-bit rule pinned (first unpassed door, else last door) with the disclosed limit that under the shared schedule the bit's value equals the shared door bit; `TEMPLATE/world.py` unmodified.
+4. **Runner — PASS.** `train_loop` mirrors `train_neural` except the two stated changes (caller factory world; goal from `world.goal_pos`); greedy eval ε=0, weights frozen, 20 phases; held-out variants W10 (5,2), W20 (10,5), W30 (15,7); `run_sweep` dormant (CLI exposes only `--plan` and `--smoke`).
+5. **Preregistration — PASS.** §4 matches issued WO §2.4 exactly (primary bar SCALES; secondary contrast reported, not gating; completeness; confirm rule labeled "parameterized template scales"; outside worlds discovery only).
+6. **Counts — PASS.** Recomputed from `sweep_plan`: 60 trainings + 105 eval jobs = 165 arm-runs. 165 > 150, so the arm-run trigger FIRES; the spike-first gate applies.
+7. **Sanity only — PASS.** Mechanics re-run by the verifier: 89/89 PASS (W10-vs-World logs 42/42, log audit 0 violations). Both unit suites PASS; structural checks PASS. Smoke check (verifier's own D_plain_0 weights): 20/20, ticks 30,29,28,27,26,25,24,23,22,21,20,19,18,18,18,18,18,18,18, crushes 1 (phase 0) else 0 — exactly as claimed. No sweep trainings/evals ran; no sweep records in the repo.
+8. **Labels — PASS.** Design note DRAFT; §9 was empty until this ruling; no "instructor-verified" claim in any Step 0 file; §7 "FIDELITY: PASS" is the builder's sanity claim, not a verification claim.
+
+**Verification runs:** the 12 fidelity trainings were verifier runs, held outside the repo (`~/workspace/verify-exp1-work/out/`), never pooled with any sweep result. A runtime restart killed the first fidelity run after 9 of 12 trainings (files intact, numbers matching); the verifier relaunched only the 3 missing trainings plus the comparison. The final comparison covers all 12 pairs.
+
+**Notes (not defects, no edits made):** (N1) This note's header describes the workbench build origin ("UNCOMMITTED… sibling NOT modified") — superseded in the sibling context by the owner-directed port (`199bd4b`); any header clarification belongs in a later commit, never by editing `199bd4b`. (N2) WO §5's "executor delivers uncommitted, verifier commits on PASS" model was superseded by the owner's direction to commit Step 0 to the sibling before verification; the content ruling is unaffected. (N3) The verification brief's file paths omitted the `TEMPLATE/nn/` prefix; actual paths are under `TEMPLATE/nn/`. (N4) The workbench-side replication set was not re-derived from the workbench, per the brief's boundary; nothing in Step 0 depends on it.
+
+**What remains gated (not authorized by this ruling):** owner gate ruling (expected spike-first) → spike (MEASUREMENT ONLY) → owner proceed ruling → sweep runs (Steps 1+). Each needs its own ruling. No Layer F world, schedule change, further template change, or tag/freeze/announcement action is authorized here.
