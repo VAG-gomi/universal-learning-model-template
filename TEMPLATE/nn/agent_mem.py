@@ -45,11 +45,15 @@ N_INPUTS_MEM = N_INPUTS + 1  # 102: position + door + previous door
 
 
 class MemoryEncoder(object):
-    """Encoder protocol for the memory arm: 102 inputs."""
+    """Encoder protocol for the memory arm: grid_size^2 + 2 inputs
+    (102 at the default grid_size=10: one-hot + current door +
+    previous door)."""
 
     n_inputs = N_INPUTS_MEM
 
-    def __init__(self):
+    def __init__(self, grid_size=GRID_SIZE):
+        self.grid_size = grid_size
+        self.n_inputs = grid_size * grid_size + 2
         self.prev_door = 0
 
     def reset(self, world):
@@ -58,10 +62,11 @@ class MemoryEncoder(object):
 
     def encode(self, world):
         (x, y), door = world.observe()
-        v = np.zeros(N_INPUTS_MEM)
-        v[y * GRID_SIZE + x] = 1.0
-        v[N_INPUTS - 1] = 1.0 if door else 0.0
-        v[N_INPUTS] = float(self.prev_door)
+        n = self.grid_size * self.grid_size
+        v = np.zeros(n + 2)
+        v[y * self.grid_size + x] = 1.0
+        v[n] = 1.0 if door else 0.0
+        v[n + 1] = float(self.prev_door)
         self.prev_door = 1 if door else 0
         return v
 

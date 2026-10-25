@@ -71,7 +71,8 @@ REMAINING_SCALE = 10.0
 
 
 class WrappedEncoder(object):
-    """Encoder for the wrapped arm: 101 plain inputs + 3 time features.
+    """Encoder for the wrapped arm: grid_size^2 plain inputs + 3 time
+    features (104 at the default grid_size=10).
 
     Holds one ScheduleModel for its whole lifetime.  reset() marks an
     episode boundary (model.new_episode()); it never clears the model.
@@ -79,9 +80,11 @@ class WrappedEncoder(object):
 
     n_inputs = 104
 
-    def __init__(self, model=None, blank_features=False):
+    def __init__(self, model=None, blank_features=False, grid_size=10):
         self.model = model if model is not None else ScheduleModel()
         self.blank_features = blank_features
+        self.grid_size = grid_size
+        self.n_inputs = grid_size * grid_size + 4
         self.total_ticks = 0
         self.known_ticks = 0
         self._episode = -1
@@ -98,16 +101,17 @@ class WrappedEncoder(object):
         # The model's only input, once per observation.
         self.model.observe(tick, bool(door))
         self.total_ticks += 1
+        n = self.grid_size * self.grid_size
         v = np.zeros(self.n_inputs)
-        v[y * 10 + x] = 1.0
-        v[100] = 1.0 if door else 0.0
+        v[y * self.grid_size + x] = 1.0
+        v[n] = 1.0 if door else 0.0
         if not self.blank_features:
             remaining = self.model.open_ticks_remaining()
             phase = self.model.ticks_since_opening()
             if remaining is not None and phase is not None:
-                v[101] = phase / PHASE_SCALE
-                v[102] = remaining / REMAINING_SCALE
-                v[103] = 1.0
+                v[n + 1] = phase / PHASE_SCALE
+                v[n + 2] = remaining / REMAINING_SCALE
+                v[n + 3] = 1.0
                 self.known_ticks += 1
         if (self._converged_ep is None
                 and self.model.first_estimates_tick is not None):
@@ -145,7 +149,8 @@ def train_wrapped(seed, hidden=32, episodes=2000, cap=EPISODE_CAP,
 class ClockEncoder(object):
     """Control arm: the raw tick, no schedule model.
 
-    102 inputs: 101 (position + door) + tick/200.  Raw tick, NOT
+    grid_size^2 + 2 inputs (102 at the default grid_size=10):
+    one-hot position + door + tick/200.  Raw tick, NOT
     tick % 20: handing the phase directly would duplicate the
     wrapper's phase feature and confound the control.  The network
     must learn the periodic mapping itself, which is exactly what
@@ -155,15 +160,20 @@ class ClockEncoder(object):
 
     n_inputs = 102
 
+    def __init__(self, grid_size=10):
+        self.grid_size = grid_size
+        self.n_inputs = grid_size * grid_size + 2
+
     def reset(self, world):
         pass
 
     def encode(self, world):
         (x, y), door = world.observe()
+        n = self.grid_size * self.grid_size
         v = np.zeros(self.n_inputs)
-        v[y * 10 + x] = 1.0
-        v[100] = 1.0 if door else 0.0
-        v[101] = world.tick / 200.0
+        v[y * self.grid_size + x] = 1.0
+        v[n] = 1.0 if door else 0.0
+        v[n + 1] = world.tick / 200.0
         return v
 
 

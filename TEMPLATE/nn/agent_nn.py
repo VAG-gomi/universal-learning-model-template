@@ -51,31 +51,44 @@ R_CRUSH = -1.0
 GAMMA = 0.99
 
 
-def encode_obs(world):
-    """101-vector: one-hot agent position + door bit."""
+def encode_obs(world, grid_size=GRID_SIZE):
+    """One-hot agent position + door bit; size grid_size^2 + 1.
+
+    grid_size=GRID_SIZE (10) reproduces the original 101-vector
+    exactly. The size parameter is the EXP1 §2.1 parameterization;
+    nothing else about the encoding changes.
+    """
     (x, y), door = world.observe()
-    v = np.zeros(N_INPUTS)
-    v[y * GRID_SIZE + x] = 1.0
-    v[N_INPUTS - 1] = 1.0 if door else 0.0
+    n_inputs = grid_size * grid_size + 1
+    v = np.zeros(n_inputs)
+    v[y * grid_size + x] = 1.0
+    v[n_inputs - 1] = 1.0 if door else 0.0
     return v
 
 
 class PlainEncoder(object):
-    """Encoder protocol for the plain arm: stateless, 101 inputs."""
+    """Encoder protocol for the plain arm: stateless.
+
+    n_inputs is grid_size^2 + 1 (101 at the default grid_size=10).
+    """
 
     n_inputs = N_INPUTS
+
+    def __init__(self, grid_size=GRID_SIZE):
+        self.grid_size = grid_size
+        self.n_inputs = grid_size * grid_size + 1
 
     def reset(self, world):
         pass
 
     def encode(self, world):
-        return encode_obs(world)
+        return encode_obs(world, self.grid_size)
 
 
-def obs_index(world):
+def obs_index(world, grid_size=GRID_SIZE):
     """Discrete (position, door) key for the tabular learner."""
     (x, y), door = world.observe()
-    return y * GRID_SIZE + x, 1 if door else 0
+    return y * grid_size + x, 1 if door else 0
 
 
 def env_step(world, action_idx):
@@ -125,9 +138,10 @@ class TabularQ(object):
     "stay" at a state whose Q-values never differentiated.
     """
 
-    def __init__(self, seed, alpha=0.2, gamma=GAMMA, init_value=1.0):
+    def __init__(self, seed, alpha=0.2, gamma=GAMMA, init_value=1.0,
+                 grid_size=GRID_SIZE):
         self.rng = random.Random(seed)
-        self.Q = np.full((GRID_SIZE * GRID_SIZE, 2, N_ACTIONS), init_value,
+        self.Q = np.full((grid_size * grid_size, 2, N_ACTIONS), init_value,
                          dtype=float)
         self.alpha = alpha
         self.gamma = gamma
