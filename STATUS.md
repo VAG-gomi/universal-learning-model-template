@@ -100,11 +100,27 @@ file (never rewrite history to do it).
 - **Next, in order:** the remaining-work instruction is ISSUED
   (`INSTRUCTION-EXP1-remaining-work.md`, commit `a309360`), and
   the owner gave the **spike-first gate ruling 2026-10-26 — Part 1
-  (benchmark spike, MEASUREMENT ONLY) is AUTHORIZED**, for the
-  main session as implementer (via owner ferry; the instructor
-  verifies the spike report independently). Part 2 (sweep) is NOT
-  authorized by this ruling — it needs the owner's proceed ruling
-  after the spike report has been instructor-verified.
+  (benchmark spike, MEASUREMENT ONLY) is AUTHORIZED**.
+  **Executor correction (owner direction 2026-10-26): Part 1 was
+  executed by THIS session (same implementer behaviour as the
+  previous programme work), not the main session — the
+  instruction's To: field is superseded for execution; its
+  substance governed.**
+- **Part 1 SPIKE COMPLETE (DRAFT report, commit `20023ef`).**
+  15 trainings + 19 evals, all SPIKE-labeled, 0 duplicates, no
+  sweep records, no weights saved, 2 runtime kills recovered
+  via designed resume logic (disclosed in the report). The
+  report projects the full sweep (60 trainings + 105 evals)
+  at **12.98 h point estimate (observed range 12.97–12.99 h,
+  sensitivity range 11.97–13.98 h) vs the 4-hour threshold** —
+  the sweep as designed does not fit in 4 hours of sequential
+  compute on this VM. Time goes to the learning update
+  (87.7% W10/plain, 94.7% M3/wrapped, measured). The report
+  is DRAFT, self checked only: it claims NO proceed
+  authorization and performs NO bar analysis.
+- **Still gated:** independent instructor verification of the
+  spike report → owner proceed ruling → sweep runs (Part 2).
+  Part 2 is NOT authorized until both land.
 - Scope guard: the spike produces no sweep results (spike records
   only, never pooled, never counted toward completeness). No
   sweep, no Layer F fictional-scenario worlds, no schedule or
