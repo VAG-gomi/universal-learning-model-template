@@ -97,13 +97,19 @@ file (never rewrite history to do it).
   header still describes the workbench build origin — any header
   clarification belongs in a later commit, never by editing
   `199bd4b`.
-- **Next, in order, none authorized yet:** owner spike-first gate
-  ruling → spike (MEASUREMENT ONLY) → owner proceed ruling → sweep
-  runs (in this repo, via `TEMPLATE/nn/exp1_run.py`).
-- Scope guard: Step 0 is fulfilled, but nothing further is
-  authorized by the PASS. No sweep, no spike, no Layer F
-  fictional-scenario worlds, no schedule or template change, no
-  tag/freeze/announcement action — each needs its own ruling.
+- **Next, in order:** the remaining-work instruction is ISSUED
+  (`INSTRUCTION-EXP1-remaining-work.md`, commit `a309360`), and
+  the owner gave the **spike-first gate ruling 2026-10-26 — Part 1
+  (benchmark spike, MEASUREMENT ONLY) is AUTHORIZED**, for the
+  main session as implementer (via owner ferry; the instructor
+  verifies the spike report independently). Part 2 (sweep) is NOT
+  authorized by this ruling — it needs the owner's proceed ruling
+  after the spike report has been instructor-verified.
+- Scope guard: the spike produces no sweep results (spike records
+  only, never pooled, never counted toward completeness). No
+  sweep, no Layer F fictional-scenario worlds, no schedule or
+  template change, no substrate change, no tag/freeze/announcement
+  action — each needs its own ruling.
 
 ## 7. Standing rules for any session working here
 
