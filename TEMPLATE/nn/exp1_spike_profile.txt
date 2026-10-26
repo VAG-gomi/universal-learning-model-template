@@ -1,0 +1,19 @@
+SPIKE component timing (direct per-call measurement; shares from measured components + full-loop residual)
+
+setup: plain/W10 grid=10 (per-call microseconds)
+  environment            3.1 us  share   0.4%
+  encoding               0.7 us  share   0.1%
+  act_forward           12.7 us  share   1.7%
+  buffer_add             0.4 us  share   0.0%
+  learning_update      660.8 us  share  87.7%
+  loop_residual         75.5 us  share  10.0%
+  full_step            753.3 us  (sum of parts     677.8 us)
+
+setup: wrapped/M3 grid=50 (per-call microseconds)
+  environment            3.1 us  share   0.0%
+  encoding               2.9 us  share   0.0%
+  act_forward           59.0 us  share   0.7%
+  buffer_add             0.3 us  share   0.0%
+  learning_update     8398.7 us  share  94.7%
+  loop_residual        404.2 us  share   4.6%
+  full_step           8868.2 us  (sum of parts    8464.0 us)

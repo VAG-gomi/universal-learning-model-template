@@ -1,0 +1,63 @@
+SPIKE profile jobs (200 episodes each; proportions only, never projection inputs)
+
+job: plain/W10/0 episodes=200 reached=22/200
+  learning_update      31.87s  26.2%
+  environment           4.39s   3.6%
+  encoding_forward      0.59s   0.5%
+  other                84.91s  69.7%
+  profile_total       121.75s
+  top cumulative functions:
+             6789008 function calls (6750563 primitive calls) in 33.119 seconds
+    
+       Ordered by: cumulative time
+       List reduced from 113 to 15 due to restriction <15>
+    
+       ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+            1    0.176    0.176   33.119   33.119 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/exp1_run.py:127(train_loop)
+        38443    1.046    0.000   31.865    0.001 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/agent_nn.py:194(train_step)
+       314584   11.133    0.000   11.133    0.000 {method 'dot' of 'numpy.ndarray' objects}
+        38412    0.402    0.000    8.531    0.000 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/agent_nn.py:124(sample)
+        38412    7.753    0.000    8.124    0.000 {method 'choice' of 'numpy.random.mtrand.RandomState' objects}
+        80468    1.210    0.000    6.902    0.000 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/nnet.py:105(forward)
+        38412    0.562    0.000    6.385    0.000 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/nnet.py:120(backward)
+        38412    3.795    0.000    3.915    0.000 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/nnet.py:170(step)
+        76824    2.615    0.000    2.945    0.000 /usr/lib/python3/dist-packages/numpy/core/shape_base.py:372(stack)
+        38412    0.583    0.000    1.408    0.000 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/nnet.py:195(masked_mse_grad)
+       192060    0.669    0.000    0.669    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+        38443    0.156    0.000    0.557    0.000 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/exp1_run.py:93(env_step_exp1)
+        38412    0.076    0.000    0.537    0.000 /usr/lib/python3/dist-packages/numpy/core/fromnumeric.py:3385(mean)
+        38412    0.192    0.000    0.461    0.000 /usr/lib/python3/dist-packages/numpy/core/_methods.py:101(_mean)
+        38412    0.055    0.000    0.361    0.000 /usr/lib/python3/dist-packages/numpy/core/fromnumeric.py:2979(prod)
+    
+    
+
+job: wrapped/M3/0 episodes=200 reached=0/200
+  learning_update     329.51s  25.9%
+  environment          41.58s   3.3%
+  encoding_forward      1.46s   0.1%
+  other               899.99s  70.7%
+  profile_total      1272.54s
+  top cumulative functions:
+             7409542 function calls (7369542 primitive calls) in 332.365 seconds
+    
+       Ordered by: cumulative time
+       List reduced from 122 to 15 due to restriction <15>
+    
+       ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+            1    0.327    0.327  332.364  332.364 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/exp1_run.py:127(train_loop)
+        40000    1.783    0.000  329.505    0.008 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/agent_nn.py:194(train_step)
+       327486  261.083    0.001  261.083    0.001 {method 'dot' of 'numpy.ndarray' objects}
+        83805    2.106    0.000  134.834    0.002 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/nnet.py:105(forward)
+        39969    0.921    0.000  129.931    0.003 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/nnet.py:120(backward)
+        39969   40.432    0.001   40.624    0.001 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/nnet.py:170(step)
+        39969    0.741    0.000   10.224    0.000 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/agent_nn.py:124(sample)
+        39969    8.746    0.000    9.478    0.000 {method 'choice' of 'numpy.random.mtrand.RandomState' objects}
+        79938    8.368    0.000    8.741    0.000 /usr/lib/python3/dist-packages/numpy/core/shape_base.py:372(stack)
+        39969    1.005    0.000    2.447    0.000 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/nnet.py:195(masked_mse_grad)
+       199845    1.179    0.000    1.179    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+        40000    0.304    0.000    0.936    0.000 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/exp1_run.py:93(env_step_exp1)
+        39969    0.147    0.000    0.923    0.000 /usr/lib/python3/dist-packages/numpy/core/fromnumeric.py:3385(mean)
+        40200    0.294    0.000    0.791    0.000 /home/hatch/workspace/universal-learning-model-template/TEMPLATE/nn/agent_wrapped.py:98(encode)
+        39969    0.310    0.000    0.776    0.000 /usr/lib/python3/dist-packages/numpy/core/_methods.py:101(_mean)
+    
+    
