@@ -6,7 +6,7 @@ full conversation history. Keep it current: when the announced state
 changes, a gate ruling lands, or the active track changes, update this
 file (never rewrite history to do it).
 
-**Last updated:** 2026-10-26.
+**Last updated:** 2026-10-27.
 
 ## 1. What this repo is
 
@@ -158,18 +158,27 @@ file (never rewrite history to do it).
   `20023ef` for verification, numbers unaffected). The
   ruling performs NO bar analysis and pools nothing with
   any sweep result (none exists).
-- **Still gated:** Gate 1 — owner proceed ruling (after
-  this verified report, including the over-4-hour
-  projection and its seed-0-conditional bound) — PLUS
-  issuance of rev1 (both required before any sweep).
-  Part 2 (sweep runs) is NOT authorized until both land.
-  This recording commit does not authorize the sweep,
-  issue rev1, or change any earlier commit.
+- **Gate 1 + issuance — BOTH GIVEN 2026-10-27 (owner, worker
+  chat, own words):** Gate 1 proceed ruling — proceed with
+  the EXP1 sweep on the current hand-written numpy
+  substrate, no substrate change, despite the verified
+  12.98-hour projection vs the 4-hour threshold, noting
+  the projection is seed-0-conditional; AND issuance —
+  "I issue rev1, and rev1 governs going forward."
+  Rev1 issued at `2ac3d1f`
+  (`INSTRUCTION-EXP1-full-sequence-rev1.md`, body verbatim
+  from the 2026-10-26 draft except an issuance note +
+  status/footer updates clarifying that Gate 0, Step 1,
+  and Step 2 are complete). **Step 3 sweep is now
+  AUTHORIZED** (executor: spike-executor session, Gate
+  0d). Step 4 (instructor verification of the sweep +
+  Stage 1) remains pending after Step 3 delivery.
 - Scope guard: the spike produces no sweep results (spike records
-  only, never pooled, never counted toward completeness). No
-  sweep, no Layer F fictional-scenario worlds, no schedule or
-  template change, no substrate change, no tag/freeze/announcement
-  action — each needs its own ruling.
+  only, never pooled, never counted toward completeness).
+  Sweep runs are now authorized under issued rev1 only; no
+  Layer F fictional-scenario worlds, no schedule or
+  template change, no substrate change, no tag/freeze/
+  announcement action — each needs its own ruling.
 
 ## 7. Standing rules for any session working here
 
