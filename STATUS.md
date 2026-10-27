@@ -6,7 +6,7 @@ full conversation history. Keep it current: when the announced state
 changes, a gate ruling lands, or the active track changes, update this
 file (never rewrite history to do it).
 
-**Last updated:** 2026-10-25.
+**Last updated:** 2026-10-26.
 
 ## 1. What this repo is
 
@@ -118,9 +118,53 @@ file (never rewrite history to do it).
   (87.7% W10/plain, 94.7% M3/wrapped, measured). The report
   is DRAFT, self checked only: it claims NO proceed
   authorization and performs NO bar analysis.
-- **Still gated:** independent instructor verification of the
-  spike report → owner proceed ruling → sweep runs (Part 2).
-  Part 2 is NOT authorized until both land.
+- **Gate 0 CONFIRMED in the instructor conversation (owner,
+  own words, 2026-10-26):** 0a issued instruction for Part 1
+  only + ruled spike first 2026-10-26 (Part 2 not authorized);
+  0b Part 1 executor = spike-executor session, not main
+  session; 0c spike record = `20023ef` + `28a1fca` for
+  instructor verification; 0d sweep executor =
+  spike-executor session; 0e governing file = rev1
+  full-sequence instruction, IF ISSUED. Gate 0 alone does
+  NOT issue rev1; issuance still comes with Gate 1.
+- **Step 1 SPIKE VERIFICATION — PASS (independent verifier
+  ruling 2026-10-26, from a fresh clone at `28a1fca`).**
+  The spike report is verified as a measurement deliverable
+  for Part 1 only. The verifier re-derived, from the
+  committed records at `20023ef` (parent `11d61dd`): 15
+  trainings + 19 evals = 34 records, 0 duplicates, 0 resume
+  lines, trained-eval coverage exact, 4 held-out evals as
+  designed, all SPIKE-labeled; all 15 training rows match
+  report §2 (wall sum 9655.3 s) and all 19 eval walls match
+  §2 (sum 1.56 s); projection training point 46711.8 s,
+  observed [46667.8, 46755.7] s, sensitivity [43099.2,
+  50324.4] s via 7.73%, eval total 9.59 s, sweep total
+  46721.4 s = **12.98 h vs the 14400 s (4 h) threshold,
+  excess 32321.4 s** — the sweep as designed does NOT fit
+  in 4 hours sequential on this VM; profile matches §4
+  exactly (learning update 87.7% W10/plain, 94.7%
+  M3/wrapped); runner uses the sweep's own `train_loop` /
+  `evaluate_job`, no weights saved, no `.npz`, no sweep
+  records. The full ruling text is held by the owner
+  (local file `VERIFICATION-EXP1-spike-ruling.md`, not
+  committed to this repo). Limitations carried: restart
+  history is disclosed, not independently proven (no
+  attempt logs; timestamps consistent with kill/relaunch,
+  including a ~49-minute gap before M3); projection is
+  seed-0-conditional (only W10 has 2 seeds; the ±7.73%
+  sensitivity range does not cover a learning-vs-
+  nonlearning jump); report §7 saying the spike files are
+  "UNCOMMITTED" is now stale (they were committed at
+  `20023ef` for verification, numbers unaffected). The
+  ruling performs NO bar analysis and pools nothing with
+  any sweep result (none exists).
+- **Still gated:** Gate 1 — owner proceed ruling (after
+  this verified report, including the over-4-hour
+  projection and its seed-0-conditional bound) — PLUS
+  issuance of rev1 (both required before any sweep).
+  Part 2 (sweep runs) is NOT authorized until both land.
+  This recording commit does not authorize the sweep,
+  issue rev1, or change any earlier commit.
 - Scope guard: the spike produces no sweep results (spike records
   only, never pooled, never counted toward completeness). No
   sweep, no Layer F fictional-scenario worlds, no schedule or
