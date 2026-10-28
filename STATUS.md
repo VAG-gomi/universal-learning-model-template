@@ -225,6 +225,41 @@ file (never rewrite history to do it).
   (all jobs complete, 0 duplicates). No universality-based
   modification unlocks on this comparison; the final Stage 1
   statement awaits Step 4 instructor verification.
+- **Step 4 SWEEP VERIFICATION — PASS (verification),
+  instructor ruling 2026-10-28, from a fresh clone at
+  `03614a0`.** The ruling file
+  `VERIFICATION-EXP1-sweep-ruling.md` is held locally by the
+  owner and is NOT committed to this repo. This recording
+  covers the verification ruling only; it authorizes nothing
+  further.
+- **Stage 1, in preregistered terms: DOES NOT CONFIRM.**
+  Wrapped trained pooled 219/300 (73.00%); wrapped held-out
+  pooled 1/300 (0.33%, single held-out success wrapped/W10
+  seed 3, 1/20). Frozen SCALES bar: absolute ≥20% NOT MET
+  (0.33% < 20%); relative ≥50% of wrapped trained pooled
+  (36.50%) NOT MET (0.33% < 36.50%). Primary bar NOT MET on
+  both parts. Label "parameterized template scales" does NOT
+  apply. No cross-domain universality is claimed.
+- Secondary contrast (reported, NOT gating): wrapped
+  held-out 1/300 > plain held-out 0/300, arithmetically true,
+  changes nothing.
+- Outside worlds, DISCOVERY ONLY, no bar, no verdict:
+  wrapped trained M1 100/100, M2 54/100, M3 0/100.
+- Completeness: COMPLETE (60 trainings + 105 evals = 165
+  jobs, 2100 eval episodes, 0 duplicates). Recorded job
+  walls 15.06 h (trainings 54211.7 s + evals 10.6 s) — above
+  the spike projection, NOT a protocol, completeness, or bar
+  failure.
+- Limitations carried: restart cause (7 disclosed VM
+  restarts) is disclosed and internally consistent, NOT
+  independently proven; Gate 1 + issuance were given in the
+  worker chat, and verification takes authorization as
+  recorded (`2ac3d1f` → `5dcac7c` before the sweep).
+- **What remains gated:** nothing further is authorized by
+  this recording — no modification, re-run, next experiment,
+  Layer F, substrate change, tag/freeze/announcement action.
+  Any next step needs its own owner ruling. This recording
+  does not change the DOES NOT CONFIRM verdict.
 - Scope guard: the spike produces no sweep results (spike records
   only, never pooled, never counted toward completeness).
   Sweep runs are now authorized under issued rev1 only; no
