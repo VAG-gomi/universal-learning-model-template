@@ -1,0 +1,455 @@
+SWEEP resume state: trainings=5 evals=10 (existing job lines=15 train summaries=5 eval episodes=200)
+SWEEP skip plain/W10/0 (already recorded)
+SWEEP skip plain/W10/1 (already recorded)
+SWEEP skip plain/W10/2 (already recorded)
+SWEEP skip plain/W10/3 (already recorded)
+SWEEP skip plain/W10/4 (already recorded)
+SWEEP training plain/W20/0 wall=311.0s reached=1559/2000
+SWEEP eval plain/W20/0 -> W20 (trained) wall=0.1s reached=0/20
+SWEEP eval plain/W20/0 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training plain/W20/1 wall=344.2s reached=1488/2000
+SWEEP eval plain/W20/1 -> W20 (trained) wall=0.1s reached=0/20
+SWEEP eval plain/W20/1 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training plain/W20/2 wall=347.3s reached=1493/2000
+SWEEP eval plain/W20/2 -> W20 (trained) wall=0.1s reached=0/20
+SWEEP eval plain/W20/2 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training plain/W20/3 wall=376.9s reached=1254/2000
+SWEEP eval plain/W20/3 -> W20 (trained) wall=0.0s reached=20/20
+SWEEP eval plain/W20/3 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training plain/W20/4 wall=340.6s reached=1471/2000
+SWEEP eval plain/W20/4 -> W20 (trained) wall=0.0s reached=20/20
+SWEEP eval plain/W20/4 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training plain/W30/0 wall=1364.5s reached=1/2000
+SWEEP eval plain/W30/0 -> W30 (trained) wall=0.1s reached=0/20
+SWEEP eval plain/W30/0 -> W30h (held-out) wall=0.1s reached=0/20
+SWEEP training plain/W30/1 wall=1030.0s reached=940/2000
+SWEEP eval plain/W30/1 -> W30 (trained) wall=0.1s reached=0/20
+SWEEP eval plain/W30/1 -> W30h (held-out) wall=0.1s reached=0/20
+SWEEP training plain/W30/2 wall=1347.2s reached=1/2000
+SWEEP eval plain/W30/2 -> W30 (trained) wall=0.1s reached=0/20
+SWEEP eval plain/W30/2 -> W30h (held-out) wall=0.1s reached=0/20
+SWEEP training plain/W30/3 wall=1355.7s reached=1/2000
+SWEEP eval plain/W30/3 -> W30 (trained) wall=0.1s reached=0/20
+SWEEP eval plain/W30/3 -> W30h (held-out) wall=0.1s reached=0/20
+SWEEP training plain/W30/4 wall=1349.3s reached=0/2000
+SWEEP eval plain/W30/4 -> W30 (trained) wall=0.1s reached=0/20
+SWEEP eval plain/W30/4 -> W30h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W10/0 wall=97.6s reached=1722/2000
+SWEEP eval memory/W10/0 -> W10 (trained) wall=0.0s reached=20/20
+SWEEP eval memory/W10/0 -> W10h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W10/1 wall=95.9s reached=1754/2000
+SWEEP eval memory/W10/1 -> W10 (trained) wall=0.0s reached=20/20
+SWEEP eval memory/W10/1 -> W10h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W10/2 wall=100.2s reached=1742/2000
+SWEEP eval memory/W10/2 -> W10 (trained) wall=0.0s reached=20/20
+SWEEP eval memory/W10/2 -> W10h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W10/3 wall=95.4s reached=1758/2000
+SWEEP eval memory/W10/3 -> W10 (trained) wall=0.0s reached=20/20
+SWEEP eval memory/W10/3 -> W10h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W10/4 wall=98.9s reached=1717/2000
+SWEEP eval memory/W10/4 -> W10 (trained) wall=0.0s reached=20/20
+SWEEP eval memory/W10/4 -> W10h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W20/0 wall=354.2s reached=1371/2000
+SWEEP eval memory/W20/0 -> W20 (trained) wall=0.1s reached=0/20
+SWEEP eval memory/W20/0 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W20/1 wall=322.3s reached=1520/2000
+SWEEP eval memory/W20/1 -> W20 (trained) wall=0.1s reached=12/20
+SWEEP eval memory/W20/1 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W20/2 wall=347.3s reached=1393/2000
+SWEEP eval memory/W20/2 -> W20 (trained) wall=0.0s reached=20/20
+SWEEP eval memory/W20/2 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W20/3 wall=340.4s reached=1522/2000
+SWEEP eval memory/W20/3 -> W20 (trained) wall=0.0s reached=18/20
+SWEEP eval memory/W20/3 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W20/4 wall=387.1s reached=1242/2000
+SWEEP eval memory/W20/4 -> W20 (trained) wall=0.1s reached=0/20
+SWEEP eval memory/W20/4 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W30/0 wall=1099.7s reached=747/2000
+SWEEP eval memory/W30/0 -> W30 (trained) wall=0.1s reached=19/20
+SWEEP eval memory/W30/0 -> W30h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W30/1 wall=1344.7s reached=0/2000
+SWEEP eval memory/W30/1 -> W30 (trained) wall=0.1s reached=0/20
+SWEEP eval memory/W30/1 -> W30h (held-out) wall=0.1s reached=0/20
+SWEEP training memory/W30/2 wall=1345.9s reached=1/2000
+SWEEP eval memory/W30/2 -> W30 (trained) wall=0.1s reached=0/20
+SWEEP eval memory/W30/2 -> W30h (held-out) wall=0.2s reached=0/20
+SWEEP training memory/W30/3 wall=1346.3s reached=0/2000
+SWEEP eval memory/W30/3 -> W30 (trained) wall=0.1s reached=0/20
+SWEEP eval memory/W30/3 -> W30h (held-out) wall=0.1s reached=0/20
+SWEEP resume state: trainings=29 evals=58 (existing job lines=87 train summaries=29 eval episodes=1160)
+SWEEP skip plain/W10/0 (already recorded)
+SWEEP skip plain/W10/1 (already recorded)
+SWEEP skip plain/W10/2 (already recorded)
+SWEEP skip plain/W10/3 (already recorded)
+SWEEP skip plain/W10/4 (already recorded)
+SWEEP skip plain/W20/0 (already recorded)
+SWEEP skip plain/W20/1 (already recorded)
+SWEEP skip plain/W20/2 (already recorded)
+SWEEP skip plain/W20/3 (already recorded)
+SWEEP skip plain/W20/4 (already recorded)
+SWEEP skip plain/W30/0 (already recorded)
+SWEEP skip plain/W30/1 (already recorded)
+SWEEP skip plain/W30/2 (already recorded)
+SWEEP skip plain/W30/3 (already recorded)
+SWEEP skip plain/W30/4 (already recorded)
+SWEEP skip memory/W10/0 (already recorded)
+SWEEP skip memory/W10/1 (already recorded)
+SWEEP skip memory/W10/2 (already recorded)
+SWEEP skip memory/W10/3 (already recorded)
+SWEEP skip memory/W10/4 (already recorded)
+SWEEP skip memory/W20/0 (already recorded)
+SWEEP skip memory/W20/1 (already recorded)
+SWEEP skip memory/W20/2 (already recorded)
+SWEEP skip memory/W20/3 (already recorded)
+SWEEP skip memory/W20/4 (already recorded)
+SWEEP skip memory/W30/0 (already recorded)
+SWEEP skip memory/W30/1 (already recorded)
+SWEEP skip memory/W30/2 (already recorded)
+SWEEP skip memory/W30/3 (already recorded)
+SWEEP training memory/W30/4 wall=1343.5s reached=2/2000
+SWEEP eval memory/W30/4 -> W30 (trained) wall=0.1s reached=0/20
+SWEEP eval memory/W30/4 -> W30h (held-out) wall=0.1s reached=0/20
+SWEEP training wrapped/W10/0 wall=102.4s reached=1716/2000
+SWEEP eval wrapped/W10/0 -> W10 (trained) wall=0.0s reached=20/20
+SWEEP eval wrapped/W10/0 -> W10h (held-out) wall=0.1s reached=0/20
+SWEEP training wrapped/W10/1 wall=106.2s reached=1698/2000
+SWEEP eval wrapped/W10/1 -> W10 (trained) wall=0.0s reached=20/20
+SWEEP eval wrapped/W10/1 -> W10h (held-out) wall=0.1s reached=0/20
+SWEEP training wrapped/W10/2 wall=102.8s reached=1708/2000
+SWEEP eval wrapped/W10/2 -> W10 (trained) wall=0.0s reached=20/20
+SWEEP eval wrapped/W10/2 -> W10h (held-out) wall=0.1s reached=0/20
+SWEEP training wrapped/W10/3 wall=101.0s reached=1708/2000
+SWEEP eval wrapped/W10/3 -> W10 (trained) wall=0.0s reached=20/20
+SWEEP eval wrapped/W10/3 -> W10h (held-out) wall=0.1s reached=1/20
+SWEEP training wrapped/W10/4 wall=91.2s reached=1770/2000
+SWEEP eval wrapped/W10/4 -> W10 (trained) wall=0.0s reached=20/20
+SWEEP eval wrapped/W10/4 -> W10h (held-out) wall=0.1s reached=0/20
+SWEEP training wrapped/W20/0 wall=325.8s reached=1425/2000
+SWEEP eval wrapped/W20/0 -> W20 (trained) wall=0.0s reached=20/20
+SWEEP eval wrapped/W20/0 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training wrapped/W20/1 wall=315.5s reached=1467/2000
+SWEEP eval wrapped/W20/1 -> W20 (trained) wall=0.0s reached=19/20
+SWEEP eval wrapped/W20/1 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training wrapped/W20/2 wall=363.6s reached=1236/2000
+SWEEP eval wrapped/W20/2 -> W20 (trained) wall=0.0s reached=20/20
+SWEEP eval wrapped/W20/2 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training wrapped/W20/3 wall=314.8s reached=1494/2000
+SWEEP eval wrapped/W20/3 -> W20 (trained) wall=0.0s reached=20/20
+SWEEP eval wrapped/W20/3 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training wrapped/W20/4 wall=397.1s reached=1189/2000
+SWEEP eval wrapped/W20/4 -> W20 (trained) wall=0.0s reached=20/20
+SWEEP eval wrapped/W20/4 -> W20h (held-out) wall=0.1s reached=0/20
+SWEEP training wrapped/W30/0 wall=1352.7s reached=1/2000
+SWEEP eval wrapped/W30/0 -> W30 (trained) wall=0.1s reached=0/20
+SWEEP eval wrapped/W30/0 -> W30h (held-out) wall=0.1s reached=0/20
+SWEEP training wrapped/W30/1 wall=876.8s reached=1171/2000
+SWEEP eval wrapped/W30/1 -> W30 (trained) wall=0.1s reached=20/20
+SWEEP eval wrapped/W30/1 -> W30h (held-out) wall=0.1s reached=0/20
+SWEEP training wrapped/W30/2 wall=1016.3s reached=831/2000
+SWEEP eval wrapped/W30/2 -> W30 (trained) wall=0.1s reached=0/20
+SWEEP eval wrapped/W30/2 -> W30h (held-out) wall=0.1s reached=0/20
+SWEEP resume state: trainings=43 evals=86 (existing job lines=129 train summaries=43 eval episodes=1720)
+SWEEP skip plain/W10/0 (already recorded)
+SWEEP skip plain/W10/1 (already recorded)
+SWEEP skip plain/W10/2 (already recorded)
+SWEEP skip plain/W10/3 (already recorded)
+SWEEP skip plain/W10/4 (already recorded)
+SWEEP skip plain/W20/0 (already recorded)
+SWEEP skip plain/W20/1 (already recorded)
+SWEEP skip plain/W20/2 (already recorded)
+SWEEP skip plain/W20/3 (already recorded)
+SWEEP skip plain/W20/4 (already recorded)
+SWEEP skip plain/W30/0 (already recorded)
+SWEEP skip plain/W30/1 (already recorded)
+SWEEP skip plain/W30/2 (already recorded)
+SWEEP skip plain/W30/3 (already recorded)
+SWEEP skip plain/W30/4 (already recorded)
+SWEEP skip memory/W10/0 (already recorded)
+SWEEP skip memory/W10/1 (already recorded)
+SWEEP skip memory/W10/2 (already recorded)
+SWEEP skip memory/W10/3 (already recorded)
+SWEEP skip memory/W10/4 (already recorded)
+SWEEP skip memory/W20/0 (already recorded)
+SWEEP skip memory/W20/1 (already recorded)
+SWEEP skip memory/W20/2 (already recorded)
+SWEEP skip memory/W20/3 (already recorded)
+SWEEP skip memory/W20/4 (already recorded)
+SWEEP skip memory/W30/0 (already recorded)
+SWEEP skip memory/W30/1 (already recorded)
+SWEEP skip memory/W30/2 (already recorded)
+SWEEP skip memory/W30/3 (already recorded)
+SWEEP skip memory/W30/4 (already recorded)
+SWEEP skip wrapped/W10/0 (already recorded)
+SWEEP skip wrapped/W10/1 (already recorded)
+SWEEP skip wrapped/W10/2 (already recorded)
+SWEEP skip wrapped/W10/3 (already recorded)
+SWEEP skip wrapped/W10/4 (already recorded)
+SWEEP skip wrapped/W20/0 (already recorded)
+SWEEP skip wrapped/W20/1 (already recorded)
+SWEEP skip wrapped/W20/2 (already recorded)
+SWEEP skip wrapped/W20/3 (already recorded)
+SWEEP skip wrapped/W20/4 (already recorded)
+SWEEP skip wrapped/W30/0 (already recorded)
+SWEEP skip wrapped/W30/1 (already recorded)
+SWEEP skip wrapped/W30/2 (already recorded)
+SWEEP training wrapped/W30/3 wall=3612.3s reached=1/2000
+SWEEP eval wrapped/W30/3 -> W30 (trained) wall=0.4s reached=0/20
+SWEEP eval wrapped/W30/3 -> W30h (held-out) wall=0.4s reached=0/20
+SWEEP training wrapped/W30/4 wall=3699.9s reached=0/2000
+SWEEP eval wrapped/W30/4 -> W30 (trained) wall=0.4s reached=0/20
+SWEEP eval wrapped/W30/4 -> W30h (held-out) wall=0.4s reached=0/20
+SWEEP training wrapped/M1/0 wall=897.0s reached=1436/2000
+SWEEP eval wrapped/M1/0 -> M1 (trained) wall=0.1s reached=20/20
+SWEEP training wrapped/M1/1 wall=937.2s reached=1410/2000
+SWEEP eval wrapped/M1/1 -> M1 (trained) wall=0.1s reached=20/20
+SWEEP training wrapped/M1/2 wall=976.0s reached=1288/2000
+SWEEP eval wrapped/M1/2 -> M1 (trained) wall=0.1s reached=20/20
+SWEEP resume state: trainings=48 evals=93 (existing job lines=141 train summaries=48 eval episodes=1860)
+SWEEP skip plain/W10/0 (already recorded)
+SWEEP skip plain/W10/1 (already recorded)
+SWEEP skip plain/W10/2 (already recorded)
+SWEEP skip plain/W10/3 (already recorded)
+SWEEP skip plain/W10/4 (already recorded)
+SWEEP skip plain/W20/0 (already recorded)
+SWEEP skip plain/W20/1 (already recorded)
+SWEEP skip plain/W20/2 (already recorded)
+SWEEP skip plain/W20/3 (already recorded)
+SWEEP skip plain/W20/4 (already recorded)
+SWEEP skip plain/W30/0 (already recorded)
+SWEEP skip plain/W30/1 (already recorded)
+SWEEP skip plain/W30/2 (already recorded)
+SWEEP skip plain/W30/3 (already recorded)
+SWEEP skip plain/W30/4 (already recorded)
+SWEEP skip memory/W10/0 (already recorded)
+SWEEP skip memory/W10/1 (already recorded)
+SWEEP skip memory/W10/2 (already recorded)
+SWEEP skip memory/W10/3 (already recorded)
+SWEEP skip memory/W10/4 (already recorded)
+SWEEP skip memory/W20/0 (already recorded)
+SWEEP skip memory/W20/1 (already recorded)
+SWEEP skip memory/W20/2 (already recorded)
+SWEEP skip memory/W20/3 (already recorded)
+SWEEP skip memory/W20/4 (already recorded)
+SWEEP skip memory/W30/0 (already recorded)
+SWEEP skip memory/W30/1 (already recorded)
+SWEEP skip memory/W30/2 (already recorded)
+SWEEP skip memory/W30/3 (already recorded)
+SWEEP skip memory/W30/4 (already recorded)
+SWEEP skip wrapped/W10/0 (already recorded)
+SWEEP skip wrapped/W10/1 (already recorded)
+SWEEP skip wrapped/W10/2 (already recorded)
+SWEEP skip wrapped/W10/3 (already recorded)
+SWEEP skip wrapped/W10/4 (already recorded)
+SWEEP skip wrapped/W20/0 (already recorded)
+SWEEP skip wrapped/W20/1 (already recorded)
+SWEEP skip wrapped/W20/2 (already recorded)
+SWEEP skip wrapped/W20/3 (already recorded)
+SWEEP skip wrapped/W20/4 (already recorded)
+SWEEP skip wrapped/W30/0 (already recorded)
+SWEEP skip wrapped/W30/1 (already recorded)
+SWEEP skip wrapped/W30/2 (already recorded)
+SWEEP skip wrapped/W30/3 (already recorded)
+SWEEP skip wrapped/W30/4 (already recorded)
+SWEEP skip wrapped/M1/0 (already recorded)
+SWEEP skip wrapped/M1/1 (already recorded)
+SWEEP skip wrapped/M1/2 (already recorded)
+SWEEP training wrapped/M1/3 wall=322.3s reached=1512/2000
+SWEEP eval wrapped/M1/3 -> M1 (trained) wall=0.0s reached=20/20
+SWEEP training wrapped/M1/4 wall=336.0s reached=1423/2000
+SWEEP eval wrapped/M1/4 -> M1 (trained) wall=0.0s reached=20/20
+SWEEP training wrapped/M2/0 wall=680.5s reached=3/2000
+SWEEP eval wrapped/M2/0 -> M2 (trained) wall=0.1s reached=0/20
+SWEEP training wrapped/M2/1 wall=437.0s reached=1033/2000
+SWEEP eval wrapped/M2/1 -> M2 (trained) wall=0.0s reached=20/20
+SWEEP training wrapped/M2/2 wall=367.4s reached=1353/2000
+SWEEP eval wrapped/M2/2 -> M2 (trained) wall=0.0s reached=15/20
+SWEEP training wrapped/M2/3 wall=432.6s reached=1104/2000
+SWEEP eval wrapped/M2/3 -> M2 (trained) wall=0.0s reached=19/20
+SWEEP training wrapped/M2/4 wall=673.8s reached=2/2000
+SWEEP eval wrapped/M2/4 -> M2 (trained) wall=0.1s reached=0/20
+SWEEP training wrapped/M3/0 wall=3203.9s reached=0/2000
+SWEEP eval wrapped/M3/0 -> M3 (trained) wall=0.3s reached=0/20
+SWEEP resume state: trainings=56 evals=101 (existing job lines=157 train summaries=56 eval episodes=2020)
+SWEEP skip plain/W10/0 (already recorded)
+SWEEP skip plain/W10/1 (already recorded)
+SWEEP skip plain/W10/2 (already recorded)
+SWEEP skip plain/W10/3 (already recorded)
+SWEEP skip plain/W10/4 (already recorded)
+SWEEP skip plain/W20/0 (already recorded)
+SWEEP skip plain/W20/1 (already recorded)
+SWEEP skip plain/W20/2 (already recorded)
+SWEEP skip plain/W20/3 (already recorded)
+SWEEP skip plain/W20/4 (already recorded)
+SWEEP skip plain/W30/0 (already recorded)
+SWEEP skip plain/W30/1 (already recorded)
+SWEEP skip plain/W30/2 (already recorded)
+SWEEP skip plain/W30/3 (already recorded)
+SWEEP skip plain/W30/4 (already recorded)
+SWEEP skip memory/W10/0 (already recorded)
+SWEEP skip memory/W10/1 (already recorded)
+SWEEP skip memory/W10/2 (already recorded)
+SWEEP skip memory/W10/3 (already recorded)
+SWEEP skip memory/W10/4 (already recorded)
+SWEEP skip memory/W20/0 (already recorded)
+SWEEP skip memory/W20/1 (already recorded)
+SWEEP skip memory/W20/2 (already recorded)
+SWEEP skip memory/W20/3 (already recorded)
+SWEEP skip memory/W20/4 (already recorded)
+SWEEP skip memory/W30/0 (already recorded)
+SWEEP skip memory/W30/1 (already recorded)
+SWEEP skip memory/W30/2 (already recorded)
+SWEEP skip memory/W30/3 (already recorded)
+SWEEP skip memory/W30/4 (already recorded)
+SWEEP skip wrapped/W10/0 (already recorded)
+SWEEP skip wrapped/W10/1 (already recorded)
+SWEEP skip wrapped/W10/2 (already recorded)
+SWEEP skip wrapped/W10/3 (already recorded)
+SWEEP skip wrapped/W10/4 (already recorded)
+SWEEP skip wrapped/W20/0 (already recorded)
+SWEEP skip wrapped/W20/1 (already recorded)
+SWEEP skip wrapped/W20/2 (already recorded)
+SWEEP skip wrapped/W20/3 (already recorded)
+SWEEP skip wrapped/W20/4 (already recorded)
+SWEEP skip wrapped/W30/0 (already recorded)
+SWEEP skip wrapped/W30/1 (already recorded)
+SWEEP skip wrapped/W30/2 (already recorded)
+SWEEP skip wrapped/W30/3 (already recorded)
+SWEEP skip wrapped/W30/4 (already recorded)
+SWEEP skip wrapped/M1/0 (already recorded)
+SWEEP skip wrapped/M1/1 (already recorded)
+SWEEP skip wrapped/M1/2 (already recorded)
+SWEEP skip wrapped/M1/3 (already recorded)
+SWEEP skip wrapped/M1/4 (already recorded)
+SWEEP skip wrapped/M2/0 (already recorded)
+SWEEP skip wrapped/M2/1 (already recorded)
+SWEEP skip wrapped/M2/2 (already recorded)
+SWEEP skip wrapped/M2/3 (already recorded)
+SWEEP skip wrapped/M2/4 (already recorded)
+SWEEP skip wrapped/M3/0 (already recorded)
+SWEEP training wrapped/M3/1 wall=5310.9s reached=0/2000
+SWEEP eval wrapped/M3/1 -> M3 (trained) wall=0.5s reached=0/20
+SWEEP resume state: trainings=57 evals=102 (existing job lines=159 train summaries=57 eval episodes=2040)
+SWEEP skip plain/W10/0 (already recorded)
+SWEEP skip plain/W10/1 (already recorded)
+SWEEP skip plain/W10/2 (already recorded)
+SWEEP skip plain/W10/3 (already recorded)
+SWEEP skip plain/W10/4 (already recorded)
+SWEEP skip plain/W20/0 (already recorded)
+SWEEP skip plain/W20/1 (already recorded)
+SWEEP skip plain/W20/2 (already recorded)
+SWEEP skip plain/W20/3 (already recorded)
+SWEEP skip plain/W20/4 (already recorded)
+SWEEP skip plain/W30/0 (already recorded)
+SWEEP skip plain/W30/1 (already recorded)
+SWEEP skip plain/W30/2 (already recorded)
+SWEEP skip plain/W30/3 (already recorded)
+SWEEP skip plain/W30/4 (already recorded)
+SWEEP skip memory/W10/0 (already recorded)
+SWEEP skip memory/W10/1 (already recorded)
+SWEEP skip memory/W10/2 (already recorded)
+SWEEP skip memory/W10/3 (already recorded)
+SWEEP skip memory/W10/4 (already recorded)
+SWEEP skip memory/W20/0 (already recorded)
+SWEEP skip memory/W20/1 (already recorded)
+SWEEP skip memory/W20/2 (already recorded)
+SWEEP skip memory/W20/3 (already recorded)
+SWEEP skip memory/W20/4 (already recorded)
+SWEEP skip memory/W30/0 (already recorded)
+SWEEP skip memory/W30/1 (already recorded)
+SWEEP skip memory/W30/2 (already recorded)
+SWEEP skip memory/W30/3 (already recorded)
+SWEEP skip memory/W30/4 (already recorded)
+SWEEP skip wrapped/W10/0 (already recorded)
+SWEEP skip wrapped/W10/1 (already recorded)
+SWEEP skip wrapped/W10/2 (already recorded)
+SWEEP skip wrapped/W10/3 (already recorded)
+SWEEP skip wrapped/W10/4 (already recorded)
+SWEEP skip wrapped/W20/0 (already recorded)
+SWEEP skip wrapped/W20/1 (already recorded)
+SWEEP skip wrapped/W20/2 (already recorded)
+SWEEP skip wrapped/W20/3 (already recorded)
+SWEEP skip wrapped/W20/4 (already recorded)
+SWEEP skip wrapped/W30/0 (already recorded)
+SWEEP skip wrapped/W30/1 (already recorded)
+SWEEP skip wrapped/W30/2 (already recorded)
+SWEEP skip wrapped/W30/3 (already recorded)
+SWEEP skip wrapped/W30/4 (already recorded)
+SWEEP skip wrapped/M1/0 (already recorded)
+SWEEP skip wrapped/M1/1 (already recorded)
+SWEEP skip wrapped/M1/2 (already recorded)
+SWEEP skip wrapped/M1/3 (already recorded)
+SWEEP skip wrapped/M1/4 (already recorded)
+SWEEP skip wrapped/M2/0 (already recorded)
+SWEEP skip wrapped/M2/1 (already recorded)
+SWEEP skip wrapped/M2/2 (already recorded)
+SWEEP skip wrapped/M2/3 (already recorded)
+SWEEP skip wrapped/M2/4 (already recorded)
+SWEEP skip wrapped/M3/0 (already recorded)
+SWEEP skip wrapped/M3/1 (already recorded)
+SWEEP training wrapped/M3/2 wall=3156.5s reached=0/2000
+SWEEP eval wrapped/M3/2 -> M3 (trained) wall=0.3s reached=0/20
+SWEEP training wrapped/M3/3 wall=3116.7s reached=0/2000
+SWEEP eval wrapped/M3/3 -> M3 (trained) wall=0.3s reached=0/20
+SWEEP resume state: trainings=59 evals=104 (existing job lines=163 train summaries=59 eval episodes=2080)
+SWEEP skip plain/W10/0 (already recorded)
+SWEEP skip plain/W10/1 (already recorded)
+SWEEP skip plain/W10/2 (already recorded)
+SWEEP skip plain/W10/3 (already recorded)
+SWEEP skip plain/W10/4 (already recorded)
+SWEEP skip plain/W20/0 (already recorded)
+SWEEP skip plain/W20/1 (already recorded)
+SWEEP skip plain/W20/2 (already recorded)
+SWEEP skip plain/W20/3 (already recorded)
+SWEEP skip plain/W20/4 (already recorded)
+SWEEP skip plain/W30/0 (already recorded)
+SWEEP skip plain/W30/1 (already recorded)
+SWEEP skip plain/W30/2 (already recorded)
+SWEEP skip plain/W30/3 (already recorded)
+SWEEP skip plain/W30/4 (already recorded)
+SWEEP skip memory/W10/0 (already recorded)
+SWEEP skip memory/W10/1 (already recorded)
+SWEEP skip memory/W10/2 (already recorded)
+SWEEP skip memory/W10/3 (already recorded)
+SWEEP skip memory/W10/4 (already recorded)
+SWEEP skip memory/W20/0 (already recorded)
+SWEEP skip memory/W20/1 (already recorded)
+SWEEP skip memory/W20/2 (already recorded)
+SWEEP skip memory/W20/3 (already recorded)
+SWEEP skip memory/W20/4 (already recorded)
+SWEEP skip memory/W30/0 (already recorded)
+SWEEP skip memory/W30/1 (already recorded)
+SWEEP skip memory/W30/2 (already recorded)
+SWEEP skip memory/W30/3 (already recorded)
+SWEEP skip memory/W30/4 (already recorded)
+SWEEP skip wrapped/W10/0 (already recorded)
+SWEEP skip wrapped/W10/1 (already recorded)
+SWEEP skip wrapped/W10/2 (already recorded)
+SWEEP skip wrapped/W10/3 (already recorded)
+SWEEP skip wrapped/W10/4 (already recorded)
+SWEEP skip wrapped/W20/0 (already recorded)
+SWEEP skip wrapped/W20/1 (already recorded)
+SWEEP skip wrapped/W20/2 (already recorded)
+SWEEP skip wrapped/W20/3 (already recorded)
+SWEEP skip wrapped/W20/4 (already recorded)
+SWEEP skip wrapped/W30/0 (already recorded)
+SWEEP skip wrapped/W30/1 (already recorded)
+SWEEP skip wrapped/W30/2 (already recorded)
+SWEEP skip wrapped/W30/3 (already recorded)
+SWEEP skip wrapped/W30/4 (already recorded)
+SWEEP skip wrapped/M1/0 (already recorded)
+SWEEP skip wrapped/M1/1 (already recorded)
+SWEEP skip wrapped/M1/2 (already recorded)
+SWEEP skip wrapped/M1/3 (already recorded)
+SWEEP skip wrapped/M1/4 (already recorded)
+SWEEP skip wrapped/M2/0 (already recorded)
+SWEEP skip wrapped/M2/1 (already recorded)
+SWEEP skip wrapped/M2/2 (already recorded)
+SWEEP skip wrapped/M2/3 (already recorded)
+SWEEP skip wrapped/M2/4 (already recorded)
+SWEEP skip wrapped/M3/0 (already recorded)
+SWEEP skip wrapped/M3/1 (already recorded)
+SWEEP skip wrapped/M3/2 (already recorded)
+SWEEP skip wrapped/M3/3 (already recorded)
+SWEEP training wrapped/M3/4 wall=3147.7s reached=0/2000
+SWEEP eval wrapped/M3/4 -> M3 (trained) wall=0.3s reached=0/20
+SWEEP run complete: plan {'trainings': 60, 'eval_jobs': 105, 'arm_runs': 165}
