@@ -6,7 +6,7 @@ full conversation history. Keep it current: when the announced state
 changes, a gate ruling lands, or the active track changes, update this
 file (never rewrite history to do it).
 
-**Last updated:** 2026-10-27.
+**Last updated:** 2026-10-28.
 
 ## 1. What this repo is
 
@@ -173,6 +173,58 @@ file (never rewrite history to do it).
   AUTHORIZED** (executor: spike-executor session, Gate
   0d). Step 4 (instructor verification of the sweep +
   Stage 1) remains pending after Step 3 delivery.
+- **Step 3 SWEEP COMPLETE, delivered 2026-10-28 (coordinator,
+  spike-executor session), parent-verified from the records
+  before commit — commit `8ac0a22` (6 files, DRAFT report
+  only, self checked only).** Parent re-derived, independently
+  of the coordinator's self-check: 165 job lines (60 trainings
+  + 105 evals), 2100 eval episodes, 0 duplicates, training
+  and eval sets exactly as preregistered (inside 45 + outside
+  15 trainings; inside trained 45 + inside held-out 45 +
+  outside trained 15 evals), hyperparameters unchanged
+  (2000 episodes, hidden=32, lr=1e-3, 20/10), training
+  summaries match job reached totals (0 mismatches), eval
+  episode blocks match job reached totals (0 mismatches),
+  appendix per-seed evals match records (0 mismatches),
+  no `.npz`, no tracked file modified, spike files untouched.
+  Recorded job walls sum to 15.06 h (trainings 54211.7 s +
+  evals 10.6 s), above the spike point 12.98 h and sensitivity
+  high end 13.98 h — NOT a protocol, completeness, or bar
+  failure, because the spike projection was seed-0-conditional;
+  recorded walls exclude incomplete killed trainings, so
+  elapsed time including restarts is higher, and no elapsed
+  total is claimed. Deviations, all disclosed in the DRAFT
+  report §0: delivery uncommitted by the coordinator (parent
+  verified/committed/pushed instead, spike pattern); new
+  runner `exp1_sweep.py` using the sweep's own `train_loop` /
+  `evaluate_job` instead of `run_sweep()` directly, because
+  `run_sweep()` is not resume-safe; first launch detached
+  nohup, then tracked launches after the first VM restart.
+  Restarts disclosed (7 VM SIGTERM restarts, all mid-training,
+  all incomplete units re-ran from scratch, 0 resume_retrain
+  notes) — disclosed, not independently proven by the parent,
+  as with the spike.
+- **Step 3 result, in preregistered terms only (parent
+  re-derived, DRAFT report §4/§8, NOT the final Stage 1
+  statement):** inside greedy eval pooled (300 episodes per
+  arm): plain trained 126/300 (42.00%), held-out 0/300;
+  memory trained 169/300 (56.33%), held-out 0/300; wrapped
+  trained 219/300 (73.00%), held-out **1/300 (0.33%)** — the
+  single held-out reached episode is wrapped/W10 seed 3,
+  1/20. Per-world wrapped: trained W10 100/100, W20 99/100,
+  W30 20/100; held-out W10 1/100, W20 0/100, W30 0/100.
+  Frozen SCALES bar: absolute ≥20% **NOT MET** (0.33% < 20%);
+  relative ≥50% of wrapped trained pooled (36.50%) **NOT MET**
+  (0.33% < 36.50%); **primary bar SCALES: NOT MET (both
+  parts fail). Stage 1 comparison, in preregistered terms:
+  DOES NOT CONFIRM.** Secondary contrast (reported, NOT
+  gating): wrapped held-out 1/300 > plain held-out 0/300,
+  arithmetically true, changes nothing. Outside worlds,
+  DISCOVERY ONLY, no bar, no verdict: wrapped trained M1
+  100/100, M2 54/100, M3 0/100. Completeness: COMPLETE
+  (all jobs complete, 0 duplicates). No universality-based
+  modification unlocks on this comparison; the final Stage 1
+  statement awaits Step 4 instructor verification.
 - Scope guard: the spike produces no sweep results (spike records
   only, never pooled, never counted toward completeness).
   Sweep runs are now authorized under issued rev1 only; no
