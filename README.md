@@ -30,6 +30,12 @@ duplicating each other.
   into it.
 - **Universal papers-studies (this repository):** the template, the
   study paper with proof, the implementation instructions.
+- **Diagnostic evidence (separate backup, private):**
+  [`VAG-gomi/dev-lpair-diagnostic-evidence`](https://github.com/VAG-gomi/dev-lpair-diagnostic-evidence)
+  — the DEV-LPAIR diagnostic specification chain and the DEV-LPAIR-001
+  pilot records, code, and weights (incomplete, unofficial). Linked
+  here, never copied into this repository; the link opens only for
+  collaborators with access to the private repository.
 - **Etc. materials (future):** whatever comes next, each in its own
   repository when the need actually arises. A model built around the
   template gets its own home; a tool gets its own home.
